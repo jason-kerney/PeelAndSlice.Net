@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Moq" Version="4.18.2" />
     <PackageReference Include="MSTest" Version="2.2.10" />
   </ItemGroup>
 
@@ -16,6 +17,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Talk\Talk.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Talk.Required">
+      <HintPath>..\Talk\external\Talk.Required.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
