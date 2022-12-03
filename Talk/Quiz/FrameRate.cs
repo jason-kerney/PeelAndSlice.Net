@@ -1,4 +1,4 @@
-using System.Web;
+using Microsoft.AspNetCore.Http;
 using Talk.Required.Quiz;
 
 namespace Talk.Quiz
@@ -7,7 +7,7 @@ namespace Talk.Quiz
     {
         public void CreateCountdownFrames(HttpContext web, VideoMaker maker)
         {
-            string type = web.Request.Params["TvFormat"];
+            string type = web.Request.Headers["TvFormat"];
             int frames = 0;
 
             if ("ntsc" == type)
