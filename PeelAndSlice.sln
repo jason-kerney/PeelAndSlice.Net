@@ -7,7 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeelAndSlice", "PeelAndSlic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8AB69852-CA08-4A91-86EE-F2ED2444C0AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talk.Tests", "Talk.Tests\Talk.Tests.csproj", "{D850F89F-E4FD-4FD7-A665-935EF87ADD7A}"
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeelAndSlice.Tests", "PeelAndSlice.Tests\PeelAndSlice.Tests.csproj", "{D850F89F-E4FD-4FD7-A665-935EF87ADD7A}"
 EndProject
 Global
