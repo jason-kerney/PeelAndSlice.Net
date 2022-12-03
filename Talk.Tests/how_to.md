@@ -14,7 +14,7 @@ This is for a method where the blocking part is at the outside
 
 This is for method where the blocking part is in the middle of the method
 
-1. [ ] Call the Method
+1. [ ] Call the Method passing null for all params
    Example: `method(param1)`
 2. [ ] See the failing error:  
        Example: Error when calling `object.method(param1,param2);`

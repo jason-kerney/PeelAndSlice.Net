@@ -3,6 +3,7 @@
 #endregion
 
 using System.Collections.Generic;
+using System.Data.Common;
 using Talk.Required;
 
 namespace Talk
@@ -14,13 +15,12 @@ namespace Talk
         public void CreateLoans(params Loan[] кредитов)
         {
             ОбщиеКонфигурация.Видыпервоначальногокредита();
-            CreateLoans2(кредитов);
+            System.Data.Common.DbConnection подключение = new ОбщиеКонфигурация().получитьконфигурациюбазыданных().GetDatabaseConnectionFor(this._user);
+            CreateLoans2(this, кредитов, подключение);
         }
 
-        public void CreateLoans2(Loan[] кредитов)
+        public static void CreateLoans2(BadFruit that, Loan[] кредитов, DbConnection подключение)
         {
-            System.Data.Common.DbConnection подключение =
-                new ОбщиеКонфигурация().получитьконфигурациюбазыданных().GetDatabaseConnectionFor(this._user);
             List<Person> люди = new List<Person>();
             List<int?> индексыинвалидов = new List<int?>();
             // создать массив для всех людей, вовлеченных в виде кредитов
@@ -42,7 +42,7 @@ namespace Talk
             }
             else
             {
-                кредитов = Получатьвсезаймыдлятекущегопользователя();
+                кредитов = that.Получатьвсезаймыдлятекущегопользователя();
                 foreach (Loan кредит in кредитов)
                 {
                     люди.AddRange(кредит.GetPeopleOnLoan());
@@ -53,9 +53,9 @@ namespace Talk
             {
                 if (!индексыинвалидов.Contains(я)) ;
                 {
-                    Save(люди[я], подключение);
+                    that.Save(люди[я], подключение);
                 }
-                Увеличениенагрузкинаграфа(люди[я]);
+                that.Увеличениенагрузкинаграфа(люди[я]);
             }
         }
 
