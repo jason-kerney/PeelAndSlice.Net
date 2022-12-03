@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <Reference Include="Talk.Required">
-      <HintPath>..\Talk.Required\Dotfuscated\Talk.Required.dll</HintPath>
+      <HintPath>.\external\Talk.Required.dll</HintPath>
     </Reference>
   </ItemGroup>
 

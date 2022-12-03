@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using Talk.Required;
 
-namespace Talk
+namespace PeelAndSlice
 {
     public class BadFruit : Fruit
     {

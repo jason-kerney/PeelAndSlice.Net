@@ -1,15 +1,17 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Talk.Required;
 
-namespace Talk.Tests
+namespace PeelAndSlice.Tests.Examples
 {
     [TestClass]
     public class ConnectionTest
     {
         [TestMethod]
-        public void TestConnections()
+        public void TestDllsAreConnected()
         {
             Loan l = null;
+            BadFruit b = null;
         }
     }
+    
 }

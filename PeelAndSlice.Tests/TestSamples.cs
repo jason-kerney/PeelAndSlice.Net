@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Talk.Tests
+namespace PeelAndSlice.Tests
 {
     [TestClass]
     public class TestSamples
