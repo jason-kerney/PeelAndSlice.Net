@@ -7,8 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Moq" Version="4.18.2" />
+    <PackageReference Include="MSTest" Version="2.2.10" />
     <Reference Include="Talk.Required">
-      <HintPath>..\Talk.Required\Dotfuscated\Talk.Required.dll</HintPath>
+      <HintPath>.\external\Talk.Required.dll</HintPath>
     </Reference>
   </ItemGroup>
 
@@ -18,6 +20,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Talk.Required">
+      <HintPath>..\Talk\external\Talk.Required.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

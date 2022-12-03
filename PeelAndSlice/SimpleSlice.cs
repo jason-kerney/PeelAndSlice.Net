@@ -5,7 +5,7 @@
 using System.Data.Common;
 using Talk.Required;
 
-namespace Talk
+namespace PeelAndSlice
 {
     public class SimpleSlice
     {

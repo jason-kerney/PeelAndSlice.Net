@@ -2,7 +2,7 @@
 using Moq;
 using Talk.Required;
 
-namespace Talk.Tests
+namespace PeelAndSlice.Tests
 {
     [TestClass]
     public class TestSamples

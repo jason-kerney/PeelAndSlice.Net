@@ -1,5 +1,5 @@
 
-name: Build and Test
+name: Build
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
 
-  build-and-test:
+  build:
     runs-on: windows-latest  # For a list of available runner types, refer to
                              # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
 
@@ -27,7 +27,7 @@ jobs:
       run: ./build-and-test.cmd
       
   auto-merge:
-    needs: build-and-test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo

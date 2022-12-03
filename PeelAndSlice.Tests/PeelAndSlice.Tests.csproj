@@ -16,12 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Talk\Talk.csproj" />
+    <ProjectReference Include="..\PeelAndSlice\PeelAndSlice.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Talk.Required">
-      <HintPath>..\Talk\external\Talk.Required.dll</HintPath>
+      <HintPath>..\PeelAndSlice\external\Talk.Required.dll</HintPath>
     </Reference>
   </ItemGroup>
 

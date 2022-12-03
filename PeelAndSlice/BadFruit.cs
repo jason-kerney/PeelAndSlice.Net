@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Data.Common;
 using Talk.Required;
 
-namespace Talk
+namespace PeelAndSlice
 {
     public class BadFruit : Fruit
     {
