@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Talk.Required;
 
 namespace Talk.Tests
 {
@@ -8,6 +9,7 @@ namespace Talk.Tests
         [TestMethod]
         public void Test()
         {
+            new BadFruit().CreateLoans2(new Loan[]{});
         }
     }
 }

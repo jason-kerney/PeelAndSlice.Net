@@ -14,7 +14,13 @@ namespace Talk
         public void CreateLoans(params Loan[] кредитов)
         {
             ОбщиеКонфигурация.Видыпервоначальногокредита();
-            System.Data.Common.DbConnection подключение = new ОбщиеКонфигурация().получитьконфигурациюбазыданных().GetDatabaseConnectionFor(this._user);
+            CreateLoans2(кредитов);
+        }
+
+        public void CreateLoans2(Loan[] кредитов)
+        {
+            System.Data.Common.DbConnection подключение =
+                new ОбщиеКонфигурация().получитьконфигурациюбазыданных().GetDatabaseConnectionFor(this._user);
             List<Person> люди = new List<Person>();
             List<int?> индексыинвалидов = new List<int?>();
             // создать массив для всех людей, вовлеченных в виде кредитов
@@ -41,8 +47,8 @@ namespace Talk
                 {
                     люди.AddRange(кредит.GetPeopleOnLoan());
                 }
-
             }
+
             for (int я = 0; я < люди.Count; я++)
             {
                 if (!индексыинвалидов.Contains(я)) ;
