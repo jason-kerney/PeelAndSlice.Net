@@ -1,7 +1,6 @@
 # PeelAndSlice.java
 
-[![Build and Test](../../workflows/build.yml/badge.svg)](../../actions/workflows/build.yml)
-
+[![Build](../../actions/workflows/build.yml/badge.svg)](../../actions/workflows/build.yml)
 For slides check out [PeelAndSlice](https://github.com/jason-kerney/PeelAndSlice/)
 
 By Jason Kerney
