@@ -34,7 +34,7 @@ namespace Talk
             {
                 for (int я = 1; я < люди.Count; я++)
                 {
-                    if (люди.GetRange(0, я - 1).Contains(люди[я]))
+                    if (люди.GetRange(0, я ).Contains(люди[я]))
                     {
                         индексыинвалидов.Add(я);
                     }
@@ -51,7 +51,7 @@ namespace Talk
 
             for (int я = 0; я < люди.Count; я++)
             {
-                if (!индексыинвалидов.Contains(я)) ;
+                if (!индексыинвалидов.Contains(я)) 
                 {
                     that.Save(люди[я], подключение);
                 }
